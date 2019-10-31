@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Path=fonts/]{Hoefler-Text.ttf} % Main document font
+\setsansfont[Path = fonts/]{Gill-Sans.ttf} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Feng Zhao\par}% Your name
+{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research and Intern Experience}
+
+{\raggedleft\textsc{Jan 2019 - Present}\par}
+
+{\raggedright\large Research Assistant of Bioinformatics group\\
+\textit{University of Washington Tacoma}, Tacoma WA\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Supervised by Ka Yee Yeung
+		\item Build cloud tools to deploy and accelerate computational biology workflows
+		\item Data processing, visualization and machine learning models for medical data
+\end{itemize}}
+
+{\raggedleft\textsc{Nov 2018 - Present}\par}
+
+{\raggedright\large Real-time Street Parking Sign Recognition and Semantic Analysis\\
+\textit{University of Washington Tacoma}, Tacoma WA\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Design text detection and recognition models
+		\item Rule-driven method for semantic analysis
+\end{itemize}}
+
+{\raggedleft\textsc{Oct 2016 - Jul 2018}\par}
+
+{\raggedright\large Research Assistant for Knowledge Engineering Group (KEG)\\
+\textit{Tsinghua University}, Beijing, China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Supervised by Juanzi Li
+		\item Design algorithms for data mining, natural language processing and computer vision tasks
+		\item Process data, implement algorithms and conduct experiments
+\end{itemize}}
+
+{\raggedleft\textsc{Jan 2018 - Jul 2018}\par}
+
+{\raggedright\large Hierarchical Taxonomy Induction from Unstructured Corpus\\
+	\textit{Tsinghua University}, Beijing, China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Undergraduate thesis supervised by Yuan Shen
+		\item Taxonomy extraction, embedding, clustering and classification algorithms
+\end{itemize}}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 1717 Market Street, Apt 126, Tacoma, WA 98402 \\ %
+\raisebox{-3pt}{\Mobilefone} & +86 18800190762 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:zhaof17@mails.tsinghua.edu.cn}{zhaof17@mails.tsinghua.edu.cn} \\ % Email address
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2014 -- 2018 & \textbf{Bachelor of Engineering} \\
+& \textsc{Computer Science and Technology} \\
+& \textit{Tsinghua University}\\
+& \textit{GPA: 3.3 out of 4.0}\\
+&\\
+
+2018 -- \textsc{Present} & \textbf{Master of Science} \\
+& \textsc{Computer Science and Systems} \\
+& \textit{University of Washington Tacoma}\\
+& \textit{GPA: 4.0 out of 4.0}\\
+&\\
+
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Interests}
+
+\begin{tabular}{rl}
+ 	 & \textbf{Bioinformatics and Computational Biology}\\
+ & \textit{Distributed System}\\
+  & \textit{Data Mining and Visualization}\\ 
+  & \textit{High Performance Computing}\\ 
+  \\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Proficient Knowledge
+& Information Theory, Machine Learning, \\
+&  Distributed System\\
+Intermediate Knowledge
+& JavaScript/HTML/Backend Engineering, \\
+& High Performance Computing \\
+& Software Engineering, Database \\
+Programming Language
+& Python, C++\\
+& C, R, JavaScript \\
+Machine Learning
+& Keras, SkLearn
+\end{tabular}
+
+\section{Publication}
+
+\normalsize{Feng Zhao, Fei Ma, Yang Li, Shao-Lun Huang, Lin Zhang. "Info-Detection: An Information-Theoretic Approach to Detect Outlier" 2019 International Conference on Neural Information Processing (Accepted)} \\
+
+\normalsize{Feng Zhao, Xingzhi Niu, Shao-Lun Huang, Lin Zhang. "Reproducing Scientific Experiment with Cloud DevOps" (Submitted to Computing in Sicence and Engineering)}\\
+
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}
