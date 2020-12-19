@@ -1,0 +1,8 @@
+job1:
+  tags:
+    - latex
+  script:
+    - xelatex cv.tex
+  artifacts:
+    paths:
+      - cv.pdf

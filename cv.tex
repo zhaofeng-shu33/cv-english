@@ -1,0 +1,223 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Path=fonts/]{Hoefler-Text.ttf} % Main document font
+\setsansfont[Path = fonts/]{Gill-Sans.ttf} % Font for your name at the top
+\newfontfamily\zapfino{Zapfino.ttf}[Path = fonts/, Variant = 2]
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\Huge Feng Zhao\par}% Your name
+{\color{headings}\zapfino Curriculum {Vit\zapfino \ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research and Intern Experience}
+
+{\raggedleft\textsc{Jan 2018 - Present}\par}
+
+{\raggedright\large Research Assistant of Information Theory group\\
+\textit{Tsinghua Berkeley Shenzhen Institute}, Shenzhen China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Supervised by Shao-Lun Huang
+		\item Develop information-theoretic machine learning algorithm
+		\item Understand why deep neural network work from information theory view
+\end{itemize}}
+
+{\raggedleft\textsc{Jul 2019 - Aug}\par}
+
+{\raggedright\large Design of PC software for air-conditioner monitor system\\
+\textit{Media}, Shunde China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Superwised by Youxin Peng
+		\item Using .Net Framework 
+\end{itemize}}
+
+{\raggedleft\textsc{June 2017 - Aug}\par}
+
+{\raggedright\large Research Assistant for Mechanical Simulation Group\\
+\textit{CRRC Qingdao Sifang}, Qingdao, China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Superwised by Zongzheng Wang
+		\item Simulation Study of the static mechanism for traction rod 
+		\item Finite Element Analysis with C++(dealii)
+\end{itemize}}
+
+{\raggedleft\textsc{Mar 2017 - Jan 2018}\par}
+
+{\raggedright\large On the Temporal Cooperation Efficiency in Wireless Networks\\
+	\textit{Tsinghua University}, Beijing, China\\[5pt]}
+
+\normalsize{\begin{itemize}
+		\item Undergraduate thesis supervised by Yuan Shen
+		\item Cooperative localization, Fisher Information matrix, Position error bound, Continued fraction
+\end{itemize}}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & Nanshan Park, C2-15, Shenzhen \\ %
+\raisebox{-3pt}{\Mobilefone} & +86 18800190762 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:zhaof17@mails.tsinghua.edu.cn}{zhaof17@mails.tsinghua.edu.cn} \\ % Email address
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+
+2013 -- 2017 & \textbf{Bachelor of Science} \\
+& \textsc{Applied Mathematics} \\
+& \textit{Tsinghua University}\\
+& \textit{Order: 3.5 out of 4.0}\\
+&\\
+
+2018 -- \textsc{Present} & \textbf{Ph.D.} \\
+& \textsc{Electronical Engineering} \\
+& \textit{Tsinghua University}\\
+& \textit{GPA: 3.1 out of 4.0}\\
+&\\
+
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Academic Interests}
+
+\begin{tabular}{rl}
+ 	 & \textbf{Machine Learning and Information Theory}\\
+ & \textit{Distributed System}\\
+  & \textit{Data Mining and Visualization}\\ 
+  & \textit{High Performance Computing}\\ 
+  \\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Proficient Knowledge
+& Information Theory  \\
+& Machine Learning, \\
+Intermediate Knowledge
+& Frontend/Backend Engineering, \\
+& High Performance Computing \\
+Programming Language
+& Python, C++\\
+& C, R, JavaScript \\
+\end{tabular}
+
+\section{Publication}
+
+\normalsize{Feng Zhao, Fei Ma, Yang Li, Shao-Lun Huang, Lin Zhang. "Info-Detection: An Information-Theoretic Approach to Detect Outlier" 2019 International Conference on Neural Information Processing (Accepted)} \\
+
+\normalsize{Feng Zhao, Xingzhi Niu, Shao-Lun Huang, Lin Zhang. "Reproducing Scientific Experiment with Cloud DevOps" (Submitted to Computing in Sicence and Engineering)}\\
+
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}
